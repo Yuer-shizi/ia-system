@@ -1,0 +1,1 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d20edc4"],{b0bb:function(e,n,t){"use strict";t.r(n);var i=function(){var e=this,n=e.$createElement,t=e._self._c||n;return t("div",[e._v("\n  widget page\n")])},c=[],u={name:"widget"},a=u,d=t("2877"),o=Object(d["a"])(a,i,c,!1,null,"3bf98b80",null);o.options.__file="index.vue";n["default"]=o.exports}}]);

@@ -1,0 +1,1 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d224a93"],{e0a3:function(e,n,a){"use strict";a.r(n);var t=function(){var e=this,n=e.$createElement,a=e._self._c||n;return a("div",[e._v("\n  leave page\n")])},i=[],l={name:"leavepage1"},u=l,c=a("2877"),o=Object(c["a"])(u,t,i,!1,null,"5eaa6ead",null);o.options.__file="index.vue";n["default"]=o.exports}}]);
