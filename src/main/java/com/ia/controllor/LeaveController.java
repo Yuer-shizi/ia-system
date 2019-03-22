@@ -23,4 +23,10 @@ public class LeaveController {
 		leave = leaveDao.save(leave);
 		return new RetMessage(leave, "申请提交成功");
 	}
+
+	@GetMapping("/FindLeaver")
+	public RetMessage findLeaver(Leave leave) {
+		leave = leaveDao.findLeaver(leave.getSpeciality(), leave.getDate1(), leave.getClass1());
+		return new RetMessage(leave, "申请提交成功");
+	}
 }
