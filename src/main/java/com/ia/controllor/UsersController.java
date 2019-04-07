@@ -69,13 +69,13 @@ public class UsersController {
 	}
 
 	@GetMapping("/info")
-	public RetMessage info(String number) {
-		Optional<User> optionalUser = userDao.findById(number);
+	public RetMessage info(String username) {
+		Optional<User> optionalUser = userDao.findById(username);
 		if (optionalUser.isPresent()) {
 			User user = optionalUser.get();
-			return new RetMessage(user, "获取" + number + "的信息成功");
+			return new RetMessage(user, "获取" + username + "的信息成功");
 		}
-		return new RetMessage(400, "获取" + number + "的信息失败");
+		return new RetMessage(400, "获取" + username + "的信息失败");
 	}
 
 	@GetMapping("/list")
@@ -122,11 +122,11 @@ public class UsersController {
 				// 防止密码为空覆盖数据库密码
 				User user1 = userDao.getOne(user.getNumber());
 				user.setPassword(user1.getPassword());
-				user = userDao.save(user);
+				userDao.save(user);
 			} else {
 				return new RetMessage(400, "要更新的用户学号不存在");
 			}
-			return new RetMessage(user);
+			return new RetMessage(200, "更新成功");
 		}
 		return new RetMessage(400, "要更新的用户为空");
 	}
