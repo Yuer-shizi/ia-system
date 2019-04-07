@@ -1,9 +1,11 @@
 package com.ia.entity;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Getter;
 import lombok.Setter;
 
 import javax.persistence.*;
+import java.util.Date;
 
 @Entity
 @Getter
@@ -19,6 +21,8 @@ public class Leave {
 	private String teacherName;
 
 	private String speciality;
+
+	private String type;
 
 	private String date1;
 

@@ -31,7 +31,7 @@ public class User {
 	private String age;
 
 	// 0：学生 1：老师 -1：管理员
-	private int type;
+	private Integer type;
 
 	// 学院
 	private String department;

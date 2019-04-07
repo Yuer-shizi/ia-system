@@ -11,6 +11,6 @@ import java.util.List;
 public interface UserDao extends JpaRepository<User, String> {
 	User findByNumberAndPassword(String number, String password);
 
-	@Query(nativeQuery = true, value = "select distinct speciality from users")
+	@Query(nativeQuery = true, value = "SELECT distinct speciality from users where speciality is not null")
 	List<String> specialities();
 }
