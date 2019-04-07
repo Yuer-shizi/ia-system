@@ -9,7 +9,7 @@ spring:
   datasource:
     url: jdbc:mysql://127.0.0.1/ia_system?useUnicode=true&characterEncoding=utf-8&serverTimezone=UTC
     username: root
-    password: 123456
+    password: sa
 #   启动时是否执行初始化 sql：always 执行/never 不执行
     initialization-mode: never
     data: classpath:data.sql
